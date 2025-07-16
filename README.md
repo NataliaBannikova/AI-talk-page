@@ -1,2 +1,2 @@
-# My-GPTs
-My GPTs prompts
+# AI-talk-page
+My AI talk page
