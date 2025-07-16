@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галопом по нейросетям</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Галопом по нейросетям: что нужно знать, чтобы начать эффективно их использовать?</h1>
+    <section>
+        <p>На встрече вы узнаете, как не потеряться в шуме новых возможностей и «горячих трендов». Я расскажу, как приручить своих нейро-питомцев — ChatGPT, Midjourney, Suno, Runway, HeyGen, ElevenLabs и других: что использовать для развития бизнеса, а что — для творчества, саморазвития и автоматизации рутины. Мы обсудим, как создавать персональных ассистентов — от личного коуча и психолога до бизнес-помощников, какие ИИ-инструменты помогают в продуктивности, какие агрегаторы нейросетей экономят время и ресурсы, и когда достаточно бесплатных версий, а когда стоит купить подписку.</p>
+    </section>
+    <section>
+        <h2>Что использую я</h2>
+        <ul>
+            <li>GPT-4</li>
+            <li>Midjourney</li>
+            <li>Stable Diffusion</li>
+            <li>Runway</li>
+            <li>ElevenLabs</li>
+        </ul>
+    </section>
+    <section>
+        <a href="https://drive.google.com/your-pdf-link-here" class="button" id="downloadBtn">Скачать PDF с бонусами</a>
+    </section>
+    <footer>
+        <p>Email: example@example.com</p>
+        <p>Telegram: @yourtelegram</p>
+        <p>Instagram: @yourinstagram</p>
+    </footer>
+    <script>
+        const botToken = 'YOUR_BOT_TOKEN';
+        const chatId = 'YOUR_CHAT_ID';
+
+        const btn = document.getElementById('downloadBtn');
+        if (btn) {
+            btn.addEventListener('click', function() {
+                fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: 'Кто-то только что скачал PDF с бонусами!'
+                    })
+                });
+            });
+        }
+    </script>
+</body>
+</html>
