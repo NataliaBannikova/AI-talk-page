@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галопом по нейросетям</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #fff;
-            color: #000;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(135deg, #00f, #8a2be2);
         }
         h1, h2 {
             margin-top: 0;
+        }
+        h1, p:first-of-type {
+            animation: fadeIn 1s ease-in;
         }
         section {
             margin-bottom: 20px;
@@ -25,11 +38,16 @@
         a.button {
             display: inline-block;
             padding: 10px 20px;
-            background: #000;
+            background: transparent;
             color: #fff;
             text-decoration: none;
             border-radius: 4px;
             margin-top: 10px;
+            border: 1px solid #fff;
+            transition: box-shadow 0.3s ease;
+        }
+        a.button:hover {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
         footer {
             margin-top: 40px;
@@ -41,16 +59,6 @@
     <h1>Галопом по нейросетям: что нужно знать, чтобы начать эффективно их использовать?</h1>
     <section>
         <p>На встрече вы узнаете, как не потеряться в шуме новых возможностей и «горячих трендов». Я расскажу, как приручить своих нейро-питомцев — ChatGPT, Midjourney, Suno, Runway, HeyGen, ElevenLabs и других: что использовать для развития бизнеса, а что — для творчества, саморазвития и автоматизации рутины. Мы обсудим, как создавать персональных ассистентов — от личного коуча и психолога до бизнес-помощников, какие ИИ-инструменты помогают в продуктивности, какие агрегаторы нейросетей экономят время и ресурсы, и когда достаточно бесплатных версий, а когда стоит купить подписку.</p>
-    </section>
-    <section>
-        <h2>Что использую я</h2>
-        <ul>
-            <li>GPT-4</li>
-            <li>Midjourney</li>
-            <li>Stable Diffusion</li>
-            <li>Runway</li>
-            <li>ElevenLabs</li>
-        </ul>
     </section>
     <section>
         <a href="https://drive.google.com/your-pdf-link-here" class="button" id="downloadBtn">Скачать PDF с бонусами</a>
